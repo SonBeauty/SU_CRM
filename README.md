@@ -34,3 +34,31 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+📁 /src
+│
+├── 📁 components/
+│ ├── 📁 atoms/ → Thành phần nhỏ nhất: Button, Input, Label, Icon,...
+│ ├── 📁 molecules/ → Kết hợp từ 2+ atom: InputWithLabel, CardWithImage,...
+│ ├── 📁 organisms/ → Component phức tạp hơn: Navbar, Sidebar, FormLogin,...
+│ ├── 📁 templates/ → Layout cụ thể cho page: AuthTemplate, DashboardTemplate
+│ ├── 📁 modals/ → Modal dùng toàn site: ConfirmModal, AlertModal
+│ └── 📁 common/ → Component helper chung, không theo atomic (ex: Loader, ErrorBoundary)
+│
+├── 📁 features/ → Business logic theo domain như auth, user,...
+├── 📁 hooks/
+├── 📁 lib/
+├── 📁 store/
+├── 📁 types/
+├── 📁 config/
+
+📁 /app
+│
+├── layout.tsx → Global layout: import Header, Footer, Provider
+├── page.tsx
+├── login/
+│ └── page.tsx
+├── register/
+│ └── page.tsx
+├── dashboard/
+│ └── page.tsx
