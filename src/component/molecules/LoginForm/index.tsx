@@ -1,3 +1,4 @@
+import { Button } from "@/component/atoms/Button";
 import { Input } from "@/component/atoms/Input";
 import { FiLock, FiMail } from "react-icons/fi";
 
@@ -10,9 +11,9 @@ const LoginForm = () => {
         placeholder="Password"
         type="password"
       ></Input>
-      <button type="submit" className="bg-blue-500 text-white py-2 rounded">
+      <Button variant={"secondary"} size="lg">
         Đăng nhập
-      </button>
+      </Button>
     </form>
   );
 };
